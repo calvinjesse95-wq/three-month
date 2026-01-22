@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy 3 Months ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background-image: url('photo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+}
+.tap-screen {
+  background:#128c7e;
+  color:white;
+  position:fixed;
+  inset:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  cursor:pointer;
+  animation:pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0%{transform:scale(1)}
+  50%{transform:scale(1.05)}
+  100%{transform:scale(1)}
+}
+.chat {
+  display:none;
+  padding:15px;
+}
+.header {
+  background: url('photo1.jpg.jpg');
+  color:white;
+  padding:10px;
+  text-align:center;
+  font-weight:bold;
+}
+.photo {
+  background-image: url('photo.jpg');
+  width:100%;
+  border-radius:5000px;
+}
+</style>
+</head>
+<body>
+
+<div class="tap-screen" onclick="openChat()">
+  <h2>💝 Tap to open your 3‑month surprise 💝</h2>
+  <p>Just for you 💕</p>
+</div>
+
+<audio id="song" src="perfect.mp3" loop></audio>
+
+<div class="chat" id="chat">
+  <div class="header">💖 My Love</div>
+
+  <div class="bubble">
+    💖 <b>Happy 3 Months, My Love</b> 💖<br><br>
+    📅 Today marks exactly three months since we started this beautiful journey together.
+  </div>
+
+  <div class="bubble">
+    🤍 Thank you for loving me, supporting me, and choosing me.
+  </div>
+
+  <div class="bubble">
+    I’m so grateful for you, <b>Rita</b>.<br>
+    Here’s to many more months and a forever together. 💍✨
+  </div>
+</div> class="bubble">
+    <img src="photo1.jpg.jpg" class="photo">
+  </div>
+
+  <div class="bubble">
+    <img src="photo2.jpg.jpg" class="photo">
+  </div>
+
+  <!-- ADD PHOTOS BELOW -->
+  <!--
+  <div class="bubble"><img src="photo1.jpg" class="photo"></div>
+  <div class="bubble"><img src="photo2.jpg" class="photo"></div>
+  -->
+</div>
+
+<script>
+function openChat(){
+  document.querySelector(".tap-screen").style.display="none";
+  document.getElementById("chat").style.display="block";
+  document.getElementById("song").play();
+}
+</script>
+
+</body>
+</html>
